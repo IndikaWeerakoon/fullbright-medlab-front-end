@@ -9,7 +9,7 @@ import 'rxjs/add/observable/throw';
   providedIn: 'root'
 })
 export class CustomerService {
-  private UrlTpTest:string = "path/api/customer/";
+  UrlTpTest:string = "path/api/customer/";
   constructor(private http:HttpClient) { }
 
   public getCustomerByTelephone(tpNo:string):Observable<Customer>{
@@ -17,7 +17,7 @@ export class CustomerService {
                     catch(this.handleError);
     
   }
-  private handleError(error: HttpErrorResponse) {
+  handleError(error: HttpErrorResponse) {
     return Observable.throw(error.message);
   }
 }

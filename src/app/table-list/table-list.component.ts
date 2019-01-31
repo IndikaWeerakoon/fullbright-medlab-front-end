@@ -13,9 +13,9 @@ import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 })
 export class TableListComponent implements OnInit {
   
-  private formId:FormGroup;
-  private date :Date;
-  private recordDataRecieved:TestReportData;
+   formId:FormGroup;
+   date :Date;
+   recordDataRecieved:TestReportData;
   constructor(private repoData: ReportReadService,private fb:FormBuilder) { }
 
   ngOnInit() {
