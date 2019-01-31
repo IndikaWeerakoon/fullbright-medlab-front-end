@@ -3,13 +3,15 @@
   "version": "2.2.0",
   "license": "MIT",
   "scripts": {
+    
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.config.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve -o"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && ng serve -o",
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
     "node": "6.11.1",
